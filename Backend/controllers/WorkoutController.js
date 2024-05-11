@@ -1,6 +1,6 @@
 const Workout =require('../models/WorkoutModel') 
 const mongoose =require('mongoose')
-// get all workouts 
+                                     // get all workouts 
 
 const getWorkouts= async(req,res) =>{
     const workouts =await Workout.find({}).sort({createdAt: -1});
@@ -8,19 +8,21 @@ const getWorkouts= async(req,res) =>{
 
 }
 
-// get  a single workout
+                                    // get  a single workout
 
 const singleWorkout= async(req,res)=>{
     const {id} = req.params
 
 
-    //if id is not valid of workout 
+//if id is not valid of workout 
+    
     if(!mongoose.Types.ObjectId.isValid(id)){
         return res.status(404).json({error:"invalid id "})
     }
 
 
     const workout = await Workout.findById(id);
+
     if(!workout){
         return res.status(404).json({error:"no search found"})
     }
@@ -28,7 +30,9 @@ const singleWorkout= async(req,res)=>{
     res.status(200).json(workout)
 }
 
-// create a workout
+                                 // create a workout
+
+
 const createWorkout = async(req,res) =>{
     const  {title,load,reps} =  req.body;
 
@@ -41,14 +45,47 @@ const createWorkout = async(req,res) =>{
     }
 }
 
+                                 //  delete a workout
 
-//  delete a workout
+const deleteWorkout =async(req,res)=>{
+    const id= req.params.id;
+    console.log(id);
+    if(!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({error:"not id"})
+    }
 
-//update a workout 
+    const workout = await Workout.findByIdAndDelete({_id:id});
+   
+    res.status(200).json(
+        {status:"ok",
+         workout
+        }
+    )
+}
 
+                                  //update a workout 
+  const updateWorkout =  async(req,res)=>{
+    const {id} =req.params;
+
+
+    if(!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({error:"no such workout is present "})
+    }
+
+    const workout= await Workout.findByIdAndUpdate({_id:id },{
+        ...req.body
+    });
+
+
+    if(!workout){
+        return  res.status(404).json({error:"no search found"})
+    }
+    res.status(200).json({msg:"workout Updated "})
+
+  }
 
 
 
 module.exports ={
-    createWorkout,getWorkouts,singleWorkout
+    createWorkout,getWorkouts,singleWorkout,deleteWorkout,updateWorkout
 }

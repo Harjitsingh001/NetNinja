@@ -1,6 +1,7 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 const express = require("express");
+const cors = require("cors")
 
 // import all router that are in the router module 
 
@@ -10,6 +11,7 @@ const workoutRoute  = require('./routes/workouts')
 // express app
 
 const app =express();
+app.use(cors())
 
 
 //middleware

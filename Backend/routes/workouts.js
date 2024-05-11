@@ -1,7 +1,7 @@
 const express =require ('express')
 const Workout =require('../models/WorkoutModel') 
 const router = express.Router();
-const { createWorkout ,singleWorkout, getWorkouts }  =require('../controllers/WorkoutController')
+const { createWorkout ,singleWorkout, getWorkouts ,deleteWorkout ,updateWorkout }  =require('../controllers/WorkoutController')
 
 
 // get all users 
@@ -18,15 +18,11 @@ router.get('/:id' ,singleWorkout)
   
 
   // delete a user
-  router.delete('/:id' , (req,res)=>{
-    res.json({mssg:" Delete a single  Users"})
-  })
+  router.delete('/:id' , deleteWorkout)
   
   //  update a user
 
-  router.patch('/id' , ( req,res )=>{
-    res.json({mssg:" upadte  a single  Users"})
-  })
+  router.patch('/:id' , updateWorkout)
   
 
 module.exports = router 
