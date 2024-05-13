@@ -6,7 +6,8 @@ const Navbar = () => {
       <div className='container'>
         <Link to="/">
           <h1>
-            Workout Buddy 
+            Workout Buddy <i class='fas fa-dumbbell' style={{fontsize:"36px"}}></i>
+
           </h1>
         </Link>
       </div>

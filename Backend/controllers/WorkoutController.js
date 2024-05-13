@@ -57,7 +57,7 @@ const deleteWorkout =async(req,res)=>{
     const workout = await Workout.findByIdAndDelete({_id:id});
    
     res.status(200).json(
-        {status:"ok",
+        {status:"deleted ",
          workout
         }
     )

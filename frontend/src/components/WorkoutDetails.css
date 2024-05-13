@@ -1,0 +1,28 @@
+.workout-details {
+    background-color: rgb(176, 188, 207);
+   border-radius: 10px;
+   border:"1px solid #1f1f1f ";
+   display:'flex';
+   flex-Direction:"column";
+   margin-Right:"50%";
+   background-Color:"white";
+   margin-Bottom:"10px";
+   border-Radius:"10px";
+   margin-right: 50%;
+   padding: 40px;
+   margin-bottom: 10px;
+}
+.workout-details:hover{
+    background-color: aliceblue;
+}
+
+.innerdiv{
+    margin-left: 80px;
+}
+
+.head{
+    margin-left: 170px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 6px #171616;
+    color: rgb(56, 55, 55);
+}
