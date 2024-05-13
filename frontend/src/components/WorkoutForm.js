@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import "./WorkoutForm.css"
 const WorkoutForm = () => {
 
     const[title,setTitle]=useState('');
@@ -14,7 +14,7 @@ const WorkoutForm = () => {
 
     //fetch request  to post a now data
 
-    const responce=await fetch("/api/workouts",{
+    const responce = await fetch("/api/workouts",{
         method:'POST',
         body:JSON.stringify(workout),
         headers:{
@@ -28,14 +28,17 @@ const WorkoutForm = () => {
     }
 
     if(responce.ok){
+        setTitle('')
+        setLoad('')
+        setReps('')
         setError(null);
-        console.log('new workout added ')
+        console.log('new workout added ',json)
     }
 
    }
   return (
-    <form className='create' onSubmit={handleSubmit}>
-        <h3> Add a new Workout</h3>
+    <form style={{display:"flex",flexDirection:"column" , marginLeft:"30%"}} className='create' onSubmit={handleSubmit}>
+        <h2 style={{color:"green"}}> Add a new Workout</h2>
         <label>
             Excercide Title:
         </label>
@@ -58,9 +61,10 @@ const WorkoutForm = () => {
          onChange={(e)=>setReps(e.target.value)}
          value={reps}>
         </input>
-        <button>
+        <button className='btn'>
             Add Workout
         </button>
+        {error && <div style={{color:"red"}} className='error'>{error}</div>}
     </form>
   )
 }

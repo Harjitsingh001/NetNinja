@@ -1,0 +1,22 @@
+
+input{
+    padding: 10px;
+    /* margin: 10px; */
+    border-radius: 7px;
+    border-style: none;
+}
+.btn{
+    color:rgb(244, 248, 244);
+    background-color: rgb(38, 106, 38);
+    width: 80%;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 6px;
+
+}
+label{
+    margin: 14px;
+}
+h2{
+    text-decoration: underline;
+}

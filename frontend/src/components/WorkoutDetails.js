@@ -6,7 +6,7 @@ const WorkoutDetails = ({ workout }) => {
  <>
     <div className='workout-details'>
       <div className='innerdiv'>
-      <h2 className='head' > {workout.title}</h2>
+      <h1 className='head' > {workout.title}</h1>
       <p  className='data'> <strong>Load (KG):</strong> {workout.load} </p>
       <p className='data'><strong>Reps:</strong> {workout.reps}</p>
       <p className='data'>
