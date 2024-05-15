@@ -4,19 +4,34 @@ input{
     /* margin: 10px; */
     border-radius: 7px;
     border-style: none;
+    width: 300px;
 }
 .btn{
     color:rgb(244, 248, 244);
-    background-color: rgb(38, 106, 38);
+    background-color: rgb(52, 130, 52);
     width: 80%;
     margin: 20px;
+    border: 0px solid white;
     border-radius: 8px;
+    text-decoration: none;
     padding: 6px;
 
 }
+.btn:hover{
+    background-color: rgb(41, 113, 41);
+    cursor: pointer;
+transform: scale3d(1.1, 1.1, 1.1);}
 label{
     margin: 14px;
 }
 h2{
     text-decoration: underline;
 }
+
+.create{
+    position: fixed;
+    left: 550px;
+    right: 300px;
+    width: 24%;
+}
+

@@ -18,7 +18,7 @@ router.get('/:id' ,singleWorkout)
   
 
   // delete a user
-  router.delete('/:id' , deleteWorkout)
+  router.delete('/delete' , deleteWorkout)
   
   //  update a user
 

@@ -1,26 +1,36 @@
 .workout-details {
-background-color: white;   border-radius: 10px;
-   border:"1px solid #1f1f1f ";
-   display:'flex';
-   background-Color:"white";
-   margin-Bottom:"10px";
-   border-Radius:"10px";
-   width: 140%;
-   height: 170px;
-   padding: 40px;
-   margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: "1px solid #1f1f1f ";
+    display: 'flex';
+    background-Color: "white";
+    margin-Bottom: "10px";
+    border-Radius: "10px";
+    width: 140%;
+    height: 170px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-.workout-details:hover{
+
+.workout-details:hover {
     background-color: rgb(222, 226, 229);
 }
 
-.innerdiv{
-    margin-left: 180px;
+.innerdiv {
+    margin-left: 150px;
+    margin-top: -30px;
 }
 
-.head{
+.head {
     margin-left: 100px;
     text-transform: capitalize;
     text-shadow: 2px 2px 6px #dfd6d6;
     color: rgb(39, 182, 39);
+}
+.delStyle{
+    padding: 3px;
+    background-color: rgb(41, 113, 41);
+    cursor: pointer;
+    color: white;
+    width: 80px;
 }

@@ -48,19 +48,17 @@ const createWorkout = async(req,res) =>{
                                  //  delete a workout
 
 const deleteWorkout =async(req,res)=>{
-    const id= req.params.id;
-    console.log(id);
+    const id= req.body._id;
     if(!mongoose.Types.ObjectId.isValid(id)){
         return res.status(404).json({error:"not id"})
     }
-
     const workout = await Workout.findByIdAndDelete({_id:id});
-   
     res.status(200).json(
         {status:"deleted ",
          workout
         }
     )
+
 }
 
                                   //update a workout 
