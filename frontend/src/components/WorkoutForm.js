@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./WorkoutForm.css"
 const WorkoutForm = ({ fun }) => {
 
@@ -9,6 +9,7 @@ const WorkoutForm = ({ fun }) => {
 
 
     const handleSubmit = async (e) => {
+
         e.preventDefault();
         const workout = { title, load, reps }
 
@@ -22,10 +23,7 @@ const WorkoutForm = ({ fun }) => {
             }
         })
         const json = await responce.json()
-
-
         fun("");
-
 
         if (!responce.ok) {
             setError(json.error)
@@ -39,7 +37,13 @@ const WorkoutForm = ({ fun }) => {
             console.log('new workout added ', json)
         }
 
+
+
     }
+
+    useEffect(() => {
+        fun()
+    }, [title])
 
 
     return (

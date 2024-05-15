@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect ,useState } from 'react'
 import "./WorkoutDetails.css"
+
 const WorkoutDetails = ({ workout ,id }) => {
-   
+  // console.log(WorkoutDetails)
+  // const[ok,setOk] = useState()
 
 function deleteitem(e){
  const id = e.target.id;
+
   fetch("api/workouts/delete",{
     method:"DELETE",
     headers:{
@@ -14,11 +17,14 @@ function deleteitem(e){
   })
   .then((res)=> {
     let val = res.json();
-    return val;
-  }).then((val)=>console.log(val))
+    }).then((val)=>console.log(val))
   .catch(error => console.log(error));
-}
+}  
 
+// useEffect(() => {
+//   deleteitem(id)
+  
+// })
   return (
  <>
     <div className='workout-details'>
@@ -29,11 +35,10 @@ function deleteitem(e){
       
       <p className='data'>
         <strong>
-          Added At:
+          Added At{" "}: {""}
         </strong>{workout.createdAt}
         <span >
-          
-            <button id={id} onClick={deleteitem} className='delStyle'>
+            <button id={id}  onClick={deleteitem}  className='delStyle'>
               del
             </button>
         </span>
