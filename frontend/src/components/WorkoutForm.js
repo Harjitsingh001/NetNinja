@@ -37,8 +37,6 @@ const WorkoutForm = ({ fun }) => {
             console.log('new workout added ', json)
         }
 
-
-
     }
 
     useEffect(() => {

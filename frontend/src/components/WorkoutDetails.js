@@ -1,9 +1,7 @@
 import React, { useEffect ,useState } from 'react'
 import "./WorkoutDetails.css"
 
-const WorkoutDetails = ({ workout ,id }) => {
-  // console.log(WorkoutDetails)
-  // const[ok,setOk] = useState()
+const WorkoutDetails = ({setWorkouts ,workout ,id }) => {
 
 function deleteitem(e){
  const id = e.target.id;
@@ -15,16 +13,14 @@ function deleteitem(e){
     },
     body:JSON.stringify({_id:id})
   })
-  .then((res)=> {
-    let val = res.json();
-    }).then((val)=>console.log(val))
-  .catch(error => console.log(error));
+  .then(resp=>resp.json())
+  .then(data=>{
+    console.log(data.workout)
+    setWorkouts(data.workout)
+  })
 }  
 
-// useEffect(() => {
-//   deleteitem(id)
-  
-// })
+
   return (
  <>
     <div className='workout-details'>

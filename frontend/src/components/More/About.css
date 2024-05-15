@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: -1;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    top: 30%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+  }

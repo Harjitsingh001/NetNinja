@@ -9,6 +9,7 @@ import WorkoutDetails from '../components/WorkoutDetails'
 
 const Home = () => {
 
+
   const [workouts, setWorkouts] = useState(null);
   const [name, setName] = useState(" ")
 
@@ -32,7 +33,7 @@ const Home = () => {
       <div style={{ display: 'flex' }} className='home' >
         <div className='workouts'>
           {workouts && workouts.map((workout) => (
-            <WorkoutDetails key={workout._id} id={workout._id} workout={workout} />
+            <WorkoutDetails key={workout._id} id={workout._id} setWorkouts={setWorkouts} workout={workout} />
           ))}
         </div>
         <WorkoutForm fun={setName} />
