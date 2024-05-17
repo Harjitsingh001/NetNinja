@@ -30,6 +30,7 @@ const Home = () => {
 
   return (
     <>
+     <h style={{fontSize:"100px",marginLeft:"200px",color:"#505050"}}>daily Routine</h>
       <div style={{ display: 'flex' }} className='home' >
         <div className='workouts'>
           {workouts && workouts.map((workout) => (

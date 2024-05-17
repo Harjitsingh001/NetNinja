@@ -14,6 +14,7 @@ const About = () => {
           </span>
         </h1>
       </div>
+      <hr style={{ marginTop: "60px", width: "60%", color: "red" }}></hr>
 
       <div className='mainDiv'>
 
@@ -28,19 +29,36 @@ const About = () => {
 
         </div>
 
+
         <div className='rightSide'>
 
           <div className='upper'>
-            <h4>left1</h4>
-            <h4>left2</h4>
+            <div className='ok'><span style={{ color: 'lightgreen' }}>1.</span> Welcome to Workout Buddy! Our state-of-the-art facility boasts a wide range of equipment and modern amenities designed to cater to all your fitness needs. Experience the best in strength training, cardio, and functional fitness in a clean and spacious environment.</div>
+            <div className='ok'><span style={{ color: 'lightgreen' }}>2.</span> From high-intensity interval training to calming yoga sessions, we offer a variety of classes suitable for all fitness levels. Our professional instructors are dedicated to helping you stay motivated and achieve your fitness goals through dynamic and engaging workouts.</div>
           </div>
 
           <div className='upper'>
-            <h4>right1</h4>
-            <h4>right2</h4>
+            <div className='ok'><span style={{ color: 'lightgreen' }}>3.</span> Our certified trainers provide personal guidance tailored to your individual fitness journey. Whether you’re looking to build muscle, lose weight, or improve overall health, our trainers are here to support and inspire you every step of the way.</div>
+            <div className='ok'><span style={{ color: 'lightgreen' }}>4.</span>
+              Join our vibrant fitness community and connect with like-minded individuals who share your passion for health and wellness. At  Workout Buddy, we believe in fostering a supportive and encouraging atmosphere where everyone can thrive.
+            </div>
           </div>
         </div>
 
+      </div>
+      <hr style={{ marginTop: "60px", width: "60%", color: "red" }}></hr>
+      <p style={{fontFamily:"fantasy",fontSize:"100px",marginLeft:"400px"}}> Acsess Our Plans</p>
+      <div className='plans'>
+       
+        <div className='plan1'>
+
+        </div>
+        <div className='plan1'>
+
+        </div>
+        <div className='plan1'>
+
+        </div>
       </div>
 
     </>

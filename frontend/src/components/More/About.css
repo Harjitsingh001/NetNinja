@@ -1,63 +1,86 @@
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    z-index: -1;
-  }
-  
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-  
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-  
-  .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  }
-  
-  .centered {
-    position: absolute;
-    top: 50%;
-    top: 30%;
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
-  }
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: -1;
+}
 
-  .leftSide{
-    height: 400px;
-    width: 220px;
-    border: 10px solid rgb(222, 112, 39);
-    padding: 50px;
-    margin-left: 100px;
-  }
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 
-  .rightSide{display: flex;}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
 
-  .mainDiv{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .upper{
-    display: flex;
-    flex-direction: column;
-     justify-content: space-around;
-     margin-right: 300px;
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
 
-    }
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  top: 30%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.leftSide {
+  height: 400px;
+  width: 220px;
+  border: 10px solid rgb(222, 112, 39);
+  padding: 50px;
+  margin-left: 100px;
+
+}
+
+.rightSide {
+  display: flex;
+}
+
+.mainDiv {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 70px;
+}
+
+.ok {
+  height: 170px;
+  width: 350px;
+  border: 1px solid grey;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: grey;
+  /* align-items: center; */
+}
+
+.ok:hover {
+  transform: scale(1.1);
+  color: black;
+  transition-duration: 0.4s;
+  border-top-right-radius: 100px; 
+  border-bottom-left-radius: 100px; 
+}

@@ -23,6 +23,8 @@ function deleteitem(e){
 
   return (
  <>
+
+
     <div className='workout-details'>
       <div className='innerdiv'>
       <h1 className='head' > {workout.title}</h1>
@@ -33,7 +35,7 @@ function deleteitem(e){
         <strong>
           Added At{" "}: {""}
         </strong>{workout.createdAt}
-        <span >
+        <span  style={{marginLeft:"100px"}}>
             <button id={id}  onClick={deleteitem}  className='delStyle'>
               del
             </button>
