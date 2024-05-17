@@ -37,3 +37,27 @@
     
     transform: translate(-50%, -50%);
   }
+
+  .leftSide{
+    height: 400px;
+    width: 220px;
+    border: 10px solid rgb(222, 112, 39);
+    padding: 50px;
+    margin-left: 100px;
+  }
+
+  .rightSide{display: flex;}
+
+  .mainDiv{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .upper{
+    display: flex;
+    flex-direction: column;
+     justify-content: space-around;
+     margin-right: 300px;
+
+    }
