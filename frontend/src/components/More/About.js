@@ -47,17 +47,69 @@ const About = () => {
 
       </div>
       <hr style={{ marginTop: "60px", width: "60%", color: "red" }}></hr>
-      <p style={{fontFamily:"fantasy",fontSize:"100px",marginLeft:"400px"}}> Acsess Our Plans</p>
+      <p style={{ fontFamily: "fantasy", fontSize: "100px", marginLeft: "400px" }}>Memberships</p>
       <div className='plans'>
-       
-        <div className='plan1'>
 
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <p className='pls'>3 Months</p>
+              <span className="money">$100/M
+              </span >
+              <span style={{ color: "grey", marginLeft: "10px" }}>USD</span>           </div>
+            <div className="flip-card-back">
+              <h1>5 Classes</h1>
+              <hr style={{width:"130px"}}>
+              </hr>
+              <p>10 In Personal Training Sessions
+              </p>
+              <p>Full Gym & Facilities Access</p>
+              <p>Boxing Ring, Free Events</p>
+              <p>Gym Tour & Training Instruction</p>
+              <button className='btnn'> Get Started</button>
+            </div>
+          </div>
         </div>
-        <div className='plan1'>
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <p className='pls'>6 Months</p>
+              <span className="money">$75/M
+              </span> <span style={{ color: "grey", marginLeft: "10px" }}>USD</span>
+            </div>
+            <div className="flip-card-back">
+              <h1>10 Classes</h1>
+              <hr style={{width:"130px"}}/>
 
+              <p>20 In Personal Training Sessions
+              </p>
+              <p>Full Gym & Facilities Access</p>
+              <p>Boxing Ring, Free Events</p>
+              <p>Gym Tour & Training Instruction</p>
+              <button className='btnn'> Get Started</button>
+
+            </div>
+          </div>
         </div>
-        <div className='plan1'>
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <p className='pls'>1 year</p>
+              <span className="money">$50/M
+              </span>  <span style={{ color: "grey", marginLeft: "10px" }}>USD</span>          </div>
+            <div className="flip-card-back">
+              <h1>20 Classes</h1>
+              <hr style={{width:"130px",}}/>
 
+              <p>40 In Personal Training Sessions
+              </p>
+              <p>Full Gym & Facilities Access</p>
+              <p>Boxing Ring, Free Events</p>
+              <p>Gym Tour & Training Instruction</p>
+              <button className='btnn'> Get Started</button>
+
+            </div>
+          </div>
         </div>
       </div>
 
