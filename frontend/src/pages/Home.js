@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 
 import WorkoutForm from '../components/WorkoutForm'
-// componenet 
 
 import WorkoutDetails from '../components/WorkoutDetails'
 

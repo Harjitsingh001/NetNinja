@@ -59,7 +59,7 @@ const About = () => {
               <span style={{ color: "grey", marginLeft: "10px" }}>USD</span>           </div>
             <div className="flip-card-back">
               <h1>5 Classes</h1>
-              <hr style={{width:"130px"}}>
+              <hr style={{ width: "130px" }}>
               </hr>
               <p>10 In Personal Training Sessions
               </p>
@@ -79,7 +79,7 @@ const About = () => {
             </div>
             <div className="flip-card-back">
               <h1>10 Classes</h1>
-              <hr style={{width:"130px"}}/>
+              <hr style={{ width: "130px" }} />
 
               <p>20 In Personal Training Sessions
               </p>
@@ -99,7 +99,7 @@ const About = () => {
               </span>  <span style={{ color: "grey", marginLeft: "10px" }}>USD</span>          </div>
             <div className="flip-card-back">
               <h1>20 Classes</h1>
-              <hr style={{width:"130px",}}/>
+              <hr style={{ width: "130px", }} />
 
               <p>40 In Personal Training Sessions
               </p>
@@ -111,9 +111,42 @@ const About = () => {
             </div>
           </div>
         </div>
+
+      </div>
+      <hr style={{ marginTop: "60px", width: "60%", color: "red" }}></hr>
+
+
+      <div className='works'>
+        <p style={{ display: "flex", justifyContent: "center", color: "green", padding: "20px", fontSize: "30px", fontStyle: "italic" }}> Procedure</p>
+        <p style={{ display: "flex", justifyContent: "center", fontSize: "65px", fontStyle: "italic", marginTop: "-30px" }}>How It Works !</p>
+
+
+        <div className='three'>
+          <div className='four'>
+            <img className='photo' src='https://americanclinicsoman.com/wp-content/uploads/2018/11/Obesity-surgeries.jpg'></img>
+            <p className='goal'>Trusted Services</p>
+          </div>
+          <div className='four'><img className='photo' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYfBXt-e_OjYPmsZy0Zow4VI4127bN8dFmkfqBRzX5T3SywuSE'></img>
+            <p className='goal'>Natural Ways
+            </p>
+          </div>
+          <div className='four'><img className='photo' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQG3d3pSLtLGot1XGnW47OKicq2dDKIX7todDY2txwFeope7UWw'></img>
+            <p className='goal'>Routine Exercise
+            </p>
+            <p className='goal'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+            </p>
+          </div>
+          <div className='four'> <img className='photo' src='https://s3.envato.com/files/470799208/5ffdeaa57361c416886cf8d6_withmeta.jpg'></img>
+            <p className='goal'>Success/Goal
+            </p>
+          </div>
+
+        </div>
       </div>
 
-    </>
+      <img style={{ width: "100%" }} src='https://img.freepik.com/free-photo/dumbbells-floor-gym-ai-generative_123827-23744.jpg'>
+
+      </img>    </>
 
 
   )
